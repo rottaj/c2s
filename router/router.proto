@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option go_package = "c2/router";
+
+package router;
+
+service Server {
+    rpc SendResponse (Command) returns (Empty) {}
+    rpc FetchCommand (Empty) returns (Command) {}
+}
+
+message Command {
+    string In = 1;
+    string Out = 2;
+}
+
+
+message Empty {
+
+}
