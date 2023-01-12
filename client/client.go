@@ -13,7 +13,7 @@ import (
 )
 
 var (
-	addr = flag.String("addr", "3.224.148.116:9698", "Address")
+	addr = flag.String("addr", "localhost:9698", "Address")
 )
 
 func main() {
